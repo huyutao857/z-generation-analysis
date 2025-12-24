@@ -9,4 +9,4 @@ main = "worker.js"
 
 # 【可选】若需要环境变量（比如Vercel域名想通过环境变量配置），可添加以下内容
 [vars]
-VERCEL_DOMAIN = "z-generation-analysis.vercel.app"
+VERCEL_DOMAIN = "https://z-generation-analysis.vercel.app/"
