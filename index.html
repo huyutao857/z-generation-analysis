@@ -21,7 +21,6 @@
 <body class="bg-light">
 <div class="container py-4">
     <h1 class="text-center mb-4">Z世代用户画像与智能客群识别系统</h1>
-
     <!-- 用户画像面板 -->
     <div class="row">
         <div class="col-md-6"><div id="ageChart" style="height:300px;"></div></div>
@@ -29,7 +28,6 @@
         <div class="col-md-6"><div id="consumeChart" style="height:300px;"></div></div>
         <div class="col-md-6"><div id="interestChart" style="height:300px;"></div></div>
     </div>
-
     <!-- 客群识别（精简版，对齐model.py特征） -->
     <div class="card mt-4">
         <div class="card-header bg-primary text-white">🔍 Z世代客群智能识别（模型特征对齐版）</div>
@@ -48,7 +46,6 @@
                     <label for="N3M_AVG_DIS_ARPU" class="form-label">近3月平均ARPU (元)</label>
                     <input type="number" step="0.1" class="form-control feature-input" id="N3M_AVG_DIS_ARPU" placeholder="例如：90.5" value="90.5">
                 </div>
-
                 <!-- 网络使用 -->
                 <div class="col-md-4">
                     <label for="day_flux" class="form-label">日间流量 (GB)</label>
@@ -62,7 +59,6 @@
                     <label for="N3M_AVG_VOICE_SAT" class="form-label">近3月平均语音饱和度</label>
                     <input type="number" class="form-control feature-input" id="N3M_AVG_VOICE_SAT" min="1" max="5" placeholder="例如：4" value="4">
                 </div>
-
                 <!-- 终端与套餐 -->
                 <div class="col-md-4">
                     <label for="IS_ORD_5G_PACKAGE" class="form-label">是否开通5G套餐</label>
@@ -88,7 +84,6 @@
                         <option value="0" selected>否</option>
                     </select>
                 </div>
-
                 <!-- 位置特征 -->
                 <div class="col-md-4">
                     <label for="T_school_resident" class="form-label">校园常驻 (日间)</label>
@@ -114,7 +109,6 @@
                         <option value="0" selected>否</option>
                     </select>
                 </div>
-
                 <!-- 网游偏好 -->
                 <div class="col-md-4">
                     <label for="N3M_AVG_GAME_APP_USE_DAYS" class="form-label">近三月游戏APP使用天数</label>
@@ -128,7 +122,6 @@
                     <label for="N3M_AVG_GAME_APP_USE_DURA" class="form-label">近三月游戏APP平均使用流量</label>
                     <input type="number" step="0.1" class="form-control feature-input" id="N3M_AVG_GAME_APP_USE_DURA" placeholder="总时长" value="15.5">
                 </div>
-
                 <!-- 学习偏好 -->
                 <div class="col-md-4">
                     <label for="N3M_AVG_LEARN_APP_USE_DAYS" class="form-label">近三月学习APP使用天数</label>
@@ -142,7 +135,6 @@
                     <label for="N3M_AVG_LEARN_APP_USE_DURA" class="form-label">近三月学习APP平均使用流量</label>
                     <input type="number" step="0.1" class="form-control feature-input" id="N3M_AVG_LEARN_APP_USE_DURA" placeholder="总时长" value="5.0">
                 </div>
-
                 <!-- 金融偏好 -->
                 <div class="col-md-4">
                     <label for="N3M_AVG_BNK_APP_USE_DAYS" class="form-label">近三月银行APP使用天数</label>
@@ -156,7 +148,6 @@
                     <label for="N3M_AVG_ACCNT_APP_USE_DAYS" class="form-label">近三月账户类APP使用天数</label>
                     <input type="number" class="form-control feature-input" id="N3M_AVG_ACCNT_APP_USE_DAYS" placeholder="0-90" value="3">
                 </div>
-
                 <!-- 工作偏好 -->
                 <div class="col-md-6">
                     <label for="N3M_AVG_OFFICE_APP_USE_DAYS" class="form-label">近三月办公APP使用天数</label>
@@ -166,7 +157,6 @@
                     <label for="N3M_AVG_EMAIL_APP_USE_DAYS" class="form-label">近三月邮件APP使用天数</label>
                     <input type="number" class="form-control feature-input" id="N3M_AVG_EMAIL_APP_USE_DAYS" placeholder="0-90" value="3">
                 </div>
-
                 <!-- 社交偏好 -->
                 <div class="col-md-6">
                     <label for="N3M_AVG_SOCIAL_APP_USE_DAYS" class="form-label">近三月社交APP使用天数</label>
@@ -176,7 +166,6 @@
                     <label for="N3M_AVG_SOCIAL_APP_USE_CNT" class="form-label">近三月社交APP使用次数</label>
                     <input type="number" class="form-control feature-input" id="N3M_AVG_SOCIAL_APP_USE_CNT" placeholder="总次数" value="800">
                 </div>
-
                 <!-- 阅读偏好 -->
                 <div class="col-md-4">
                     <label for="N3M_AVG_READ_APP_USE_DAYS" class="form-label">近三月阅读APP使用天数</label>
@@ -190,7 +179,6 @@
                     <label for="N3M_AVG_READ_APP_USE_DURA" class="form-label">近三月阅读APP平均使用流量</label>
                     <input type="number" step="0.1" class="form-control feature-input" id="N3M_AVG_READ_APP_USE_DURA" placeholder="总时长" value="4.2">
                 </div>
-
                 <!-- 音乐偏好 -->
                 <div class="col-md-4">
                     <label for="N3M_AVG_MUSIC_APP_USE_DAYS" class="form-label">近三月音乐APP使用天数</label>
@@ -204,7 +192,6 @@
                     <label for="N3M_AVG_MUSIC_APP_USE_DURA" class="form-label">近三月音乐APP平均使用流量</label>
                     <input type="number" step="0.1" class="form-control feature-input" id="N3M_AVG_MUSIC_APP_USE_DURA" placeholder="总时长" value="12.0">
                 </div>
-
                 <div class="col-12">
                     <button type="submit" class="btn btn-success" id="predictBtn">
                         <span id="predictBtnText">识别Z世代客群</span>
@@ -216,20 +203,18 @@
             <div id="predictResult" class="result-box d-none"></div>
         </div>
     </div>
-
     <!-- 模型评估 -->
     <div class="card mt-4">
         <div class="card-header bg-info text-white">📊 模型评估报告</div>
         <div class="card-body">
             <div id="evalMetrics"></div>
             <table class="table table-striped mt-3">
-                <thead><tr><th>客群</th><th>精确率</th><th>召回率</th><th>F1值</th><th>样本数</th></tr></thead>
+                <thead><tr><<th>客群</</th><<th>精确率</</th><<th>召回率</</th><<th>F1值</</th><<th>样本数</</th></tr></thead>
                 <tbody id="groupMetricsBody"></tbody>
             </table>
             <p id="evalConclusion" class="mt-2"></p>
         </div>
     </div>
-
     <!-- AI 智能分析 -->
     <div class="card mt-4">
         <div class="card-header bg-warning text-dark">🤖 AI 智能分析助手</div>
@@ -246,8 +231,10 @@
         </div>
     </div>
 </div>
-
 <script>
+// === 关键配置：替换为你的PythonAnywhere后端完整域名 ===
+const backendUrl = "https://你的用户名.pythonanywhere.com"; // 必须修改为实际域名！
+
 // === 新增：兴趣偏好专用渲染函数（横向条形图）===
 function renderInterestChart(containerId, data, title) {
     const chart = echarts.init(document.getElementById(containerId));
@@ -298,10 +285,9 @@ function renderInterestChart(containerId, data, title) {
     chart.setOption(option);
     window.addEventListener('resize', () => chart.resize());
 }
-
-// 加载画像数据（已更新 interestChart 渲染逻辑）
+// 加载画像数据（已更新为后端接口请求）
 function loadPortraitData() {
-    fetch('https://huyutao857777.pythonanywhere.com/get_portrait_data')
+    fetch(`${backendUrl}/get_portrait_data`) // 调用后端接口
         .then(res => {
             if (!res.ok) throw new Error('网络响应错误');
             return res.json();
@@ -310,13 +296,11 @@ function loadPortraitData() {
             renderChart('ageChart', data.data.age_dist, '年龄分布', 'pie');
             renderChart('cityChart', data.data.city_dist, '地域分布', 'bar');
             renderChart('consumeChart', data.data.consume_feat, '消费分布', 'pie');
-
            
            // === 构造兴趣数据（直接使用后端返回的语义化标签）===
          const interestData = (data.data.interest_feat || [])
              .filter(item => item.value > 0)
              .sort((a, b) => b.value - a.value);
-
             renderInterestChart('interestChart', interestData, 'Z世代兴趣偏好（近3月平均使用天数）');
         })
         .catch(error => {
@@ -327,7 +311,6 @@ function loadPortraitData() {
             document.getElementById('interestChart').innerHTML = '<div class="text-center p-5 text-muted">兴趣数据加载失败</div>';
         });
 }
-
 // 通用图表渲染（用于 age/city/consume）
 function renderChart(containerId, data, title, type) {
     const chart = echarts.init(document.getElementById(containerId));
@@ -353,7 +336,6 @@ function renderChart(containerId, data, title, type) {
             itemStyle: { borderRadius: 4 }
         }]
     };
-
     if (type === 'bar') {
         option.xAxis = {
             type: 'category',
@@ -362,19 +344,15 @@ function renderChart(containerId, data, title, type) {
         };
         option.yAxis = { type: 'value', axisLabel: { show: false } };
     }
-
     chart.setOption(option);
     window.addEventListener('resize', () => chart.resize());
 }
-
-// 客群预测（保持不变）
+// 客群预测（改为调用后端predict接口）
 document.getElementById('predictForm').addEventListener('submit', function(e) {
     e.preventDefault();
-
     document.getElementById('predictBtnText').classList.add('d-none');
     document.getElementById('predictSpinner').classList.remove('d-none');
     document.getElementById('predictBtn').disabled = true;
-
     const inputs = {
         AGE: parseFloat(document.getElementById('AGE').value) || 0,
         circle_num: parseFloat(document.getElementById('circle_num').value) || 0,
@@ -409,62 +387,40 @@ document.getElementById('predictForm').addEventListener('submit', function(e) {
         N3M_AVG_MUSIC_APP_USE_DURA: parseFloat(document.getElementById('N3M_AVG_MUSIC_APP_USE_DURA').value) || 0
     };
 
-    let group_label = "普通大众用户";
-    let confidence = 0.85;
-    let group_desc = "";
-    let operation_advice = "";
-
-    const age = inputs.AGE;
-    const gameDays = inputs.N3M_AVG_GAME_APP_USE_DAYS;
-    const socialDays = inputs.N3M_AVG_SOCIAL_APP_USE_DAYS;
-    const isStudent = inputs.T_school_resident === "1";
-    const isNightOwl = inputs.night_flux > inputs.day_flux;
-
-    if (age >= 15 && age <= 30) {
-        if (gameDays > 20) {
-            group_label = "高活跃游戏青年";
-            group_desc = "年轻用户，重度游戏使用者，偏好夜间流量。";
-            operation_advice = "推荐大流量+低延迟游戏加速包，结合电竞活动营销。";
-            confidence = 0.92;
-        } else if (socialDays > 25) {
-            group_label = "社交达人";
-            group_desc = "高频使用社交APP，社交圈广，夜间活跃。";
-            operation_advice = "推荐社交APP免流套餐，结合夜间流量包。";
-            confidence = 0.88;
-        } else if (isStudent && inputs.N3M_AVG_LEARN_APP_USE_DAYS > 15) {
-            group_label = "校园学习族";
-            group_desc = "学生群体，高频使用学习APP，校园常驻。";
-            operation_advice = "提供校园专属低价套餐，捆绑学习APP权益。";
-            confidence = 0.87;
-        } else if (isNightOwl) {
-            group_label = "夜间娱乐族";
-            group_desc = "偏好夜间使用网络，可能涉及视频、音乐等娱乐。";
-            operation_advice = "推荐夜间流量包，结合视频/音乐平台会员。";
-            confidence = 0.86;
-        }
-    } else {
-        group_label = "年龄不符";
-        group_desc = "该用户年龄不在Z世代（15-30岁）范围内，无法识别。";
-        operation_advice = "此模型仅适用于Z世代用户。";
-        confidence = 0;
-    }
-
-    document.getElementById('predictResult').innerHTML = `
-        <h5>识别结果：${group_label}</h5>
-        <p><strong>置信度：</strong>${(confidence * 100).toFixed(1)}%</p>
-        <p><strong>客群描述：</strong>${group_desc}</p>
-        <p><strong>运营建议：</strong>${operation_advice}</p>
-        <details><summary>输入特征详情</summary><pre>${JSON.stringify(inputs, null, 2)}</pre></details>
-    `;
-    document.getElementById('predictResult').classList.remove('d-none');
-
-    setTimeout(() => {
-        document.getElementById('predictBtnText').classList.remove('d-none');
-        document.getElementById('predictSpinner').classList.add('d-none');
-        document.getElementById('predictBtn').disabled = false;
-    }, 800);
+    // 调用后端predict接口
+    fetch(`${backendUrl}/predict`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(inputs)
+    })
+    .then(res => {
+        if (!res.ok) throw new Error(`接口请求失败（状态码：${res.status}）`);
+        return res.json();
+    })
+    .then(data => {
+        // 渲染后端返回的识别结果
+        document.getElementById('predictResult').innerHTML = `
+            <h5>识别结果：${data.group_label || '未识别'}</h5>
+            <p><strong>置信度：</strong>${data.confidence ? (data.confidence * 100).toFixed(1) + '%' : '无'}</p>
+            <p><strong>客群描述：</strong>${data.group_desc || '暂无描述'}</p>
+            <p><strong>运营建议：</strong>${data.operation_advice || '暂无建议'}</p>
+            <details><summary>输入特征详情</summary><pre>${JSON.stringify(inputs, null, 2)}</pre></details>
+        `;
+        document.getElementById('predictResult').classList.remove('d-none');
+    })
+    .catch(error => {
+        document.getElementById('predictResult').innerHTML = `<p class="text-danger">识别失败：${error.message}</p>`;
+        document.getElementById('predictResult').classList.remove('d-none');
+    })
+    .finally(() => {
+        // 恢复按钮状态
+        setTimeout(() => {
+            document.getElementById('predictBtnText').classList.remove('d-none');
+            document.getElementById('predictSpinner').classList.add('d-none');
+            document.getElementById('predictBtn').disabled = false;
+        }, 800);
+    });
 });
-
 // 随机生成样本（保持不变）
 document.getElementById('randomBtn').addEventListener('click', function() {
     document.getElementById('AGE').value = Math.floor(Math.random() * 16) + 15;
@@ -499,48 +455,47 @@ document.getElementById('randomBtn').addEventListener('click', function() {
     document.getElementById('N3M_AVG_MUSIC_APP_USE_CNT').value = Math.floor(Math.random() * 1000);
     document.getElementById('N3M_AVG_MUSIC_APP_USE_DURA').value = (Math.random() * 100).toFixed(1);
 });
-
-// 模型评估（保持不变）
+// 模型评估（改为调用后端接口）
 function loadEvalReport() {
-    fetch('https://huyutao857777.pythonanywhere.com/api/model/eval')
-        .then(res => res.json())
+    fetch(`${backendUrl}/api/model/eval`) // 调用后端接口
+        .then(res => {
+            if (!res.ok) throw new Error('评估数据加载失败');
+            return res.json();
+        })
         .then(res => {
             const m = res.data.core_metrics;
             document.getElementById('evalMetrics').innerHTML = `
                 <div class="row">
-                    <div class="col"><strong>准确率：</strong>${m['准确率(Accuracy)']}</div>
-                    <div class="col"><strong>召回率：</strong>${m['召回率(Recall)']}</div>
-                    <div class="col"><strong>F1值：</strong>${m['F1值(F1-Score)']}</div>
+                    <div class="col"><strong>准确率：</strong>${m['准确率(Accuracy)'] || '无'}</div>
+                    <div class="col"><strong>召回率：</strong>${m['召回率(Recall)'] || '无'}</div>
+                    <div class="col"><strong>F1值：</strong>${m['F1值(F1-Score)'] || '无'}</div>
                 </div>
             `;
             const tbody = document.getElementById('groupMetricsBody');
             tbody.innerHTML = '';
-            res.data.group_metrics.forEach(g => {
+            (res.data.group_metrics || []).forEach(g => {
                 tbody.innerHTML += `<tr>
-                    <td>${g.group}</td>
-                    <td>${g.precision}</td>
-                    <td>${g.recall}</td>
-                    <td>${g.f1}</td>
-                    <td>${g.support}</td>
+                    <td>${g.group || '未知客群'}</td>
+                    <td>${g.precision || '无'}</td>
+                    <td>${g.recall || '无'}</td>
+                    <td>${g.f1 || '无'}</td>
+                    <td>${g.support || 0}</td>
                 </tr>`;
             });
-            document.getElementById('evalConclusion').innerText = res.data.conclusion;
+            document.getElementById('evalConclusion').innerText = res.data.conclusion || '暂无评估结论';
         })
         .catch(() => {
             document.getElementById('evalMetrics').innerHTML = '<div class="text-danger">模型评估数据加载失败</div>';
             document.getElementById('groupMetricsBody').innerHTML = '<tr><td colspan="5" class="text-center text-muted">数据加载失败</td></tr>';
         });
 }
-
 // AI 分析（保持不变）
 document.getElementById('aiAnalyzeBtn').addEventListener('click', function() {
     const query = document.getElementById('aiQueryInput').value.trim();
     if (!query) { alert('请输入您的分析问题'); return; }
-
     document.getElementById('aiBtnText').classList.add('d-none');
     document.getElementById('aiSpinner').classList.remove('d-none');
     document.getElementById('aiAnalyzeBtn').disabled = true;
-
     setTimeout(() => {
         const responses = [
             "基于您输入的特征，该用户极可能属于‘高活跃游戏青年’客群，建议加强游戏生态合作。",
@@ -549,17 +504,14 @@ document.getElementById('aiAnalyzeBtn').addEventListener('click', function() {
         ];
         document.getElementById('aiAnswer').innerText = responses[Math.floor(Math.random() * responses.length)];
         document.getElementById('aiAnswer').classList.remove('d-none');
-
         document.getElementById('aiBtnText').classList.remove('d-none');
         document.getElementById('aiSpinner').classList.add('d-none');
         document.getElementById('aiAnalyzeBtn').disabled = false;
     }, 1200);
 });
-
 document.getElementById('aiQueryInput').addEventListener('keypress', function(e) {
     if (e.key === 'Enter') document.getElementById('aiAnalyzeBtn').click();
 });
-
 // 初始化
 window.onload = function() {
     loadPortraitData();
@@ -568,12 +520,3 @@ window.onload = function() {
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
