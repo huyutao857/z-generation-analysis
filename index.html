@@ -301,7 +301,7 @@ function renderInterestChart(containerId, data, title) {
 
 // 加载画像数据（已更新 interestChart 渲染逻辑）
 function loadPortraitData() {
-    fetch('/get_portrait_data')
+    fetch('https://huyutao857777.pythonanywhere.com/get_portrait_data')
         .then(res => {
             if (!res.ok) throw new Error('网络响应错误');
             return res.json();
@@ -502,7 +502,7 @@ document.getElementById('randomBtn').addEventListener('click', function() {
 
 // 模型评估（保持不变）
 function loadEvalReport() {
-    fetch('/api/model/eval')
+    fetch('https://huyutao857777.pythonanywhere.com/api/model/eval')
         .then(res => res.json())
         .then(res => {
             const m = res.data.core_metrics;
@@ -568,6 +568,7 @@ window.onload = function() {
 </script>
 </body>
 </html>
+
 
 
 
