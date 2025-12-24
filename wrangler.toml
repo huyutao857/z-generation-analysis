@@ -1,5 +1,5 @@
 # 【必改】Worker名称：必须和你在Cloudflare中创建的Worker名称一致（比如你之前命名的vercel-proxy）
-name = "z-generation-analysis"
+name = "z-generation-analysis1"
 
 # 【固定值】指定Worker的兼容性日期（Cloudflare要求，填当前日期或最新稳定日期即可）
 compatibility_date = "2025-12-24"
